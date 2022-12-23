@@ -12,10 +12,4 @@ for (const device in devices) {
   devices[currentDevice] = `@media (max-width: ${devices[currentDevice]}px)`;
 }
 
-console.log(devices);
-
-// const devices = Object.keys(sizes).map((breakpoint) => ({
-//   [breakpoint]: `@media (max-width: ${sizes[breakpoint as TDeviceName]}px)`,
-// }));
-
 export { devices };
