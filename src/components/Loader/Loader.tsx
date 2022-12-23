@@ -1,7 +1,7 @@
 import React from "react";
 
-import { StyledContent } from "./styled";
+import { StyledSpinner } from "./styled";
 
-const Loader: React.FC = () => <StyledContent />;
+const Loader: React.FC = () => <StyledSpinner />;
 
 export { Loader };
