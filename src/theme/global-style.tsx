@@ -1,3 +1,4 @@
+import React from "react";
 import { Global } from "@emotion/react";
 
 import { css } from "~/theme";
