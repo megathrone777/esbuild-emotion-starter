@@ -1,4 +1,3 @@
-import React from "react";
 import { Await, useLoaderData } from "react-router-dom";
 
 import { Error } from "~/components";

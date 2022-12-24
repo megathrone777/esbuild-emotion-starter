@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { ThemeProvider } from "@emotion/react";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
