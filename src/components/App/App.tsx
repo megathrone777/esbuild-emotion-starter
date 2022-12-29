@@ -1,10 +1,10 @@
 import { lazy, Suspense } from "react";
-import { ThemeProvider } from "@emotion/react";
+import { Global, ThemeProvider } from "@emotion/react";
 import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
 import { exampleLoader } from "./loaders";
 import { Error, Layout, Loader } from "~/components";
-import { GlobalStyle, theme } from "~/theme";
+import { globalStyles, theme } from "~/theme";
 
 const Example: React.LazyExoticComponent<React.FC> = lazy(
   () => import("~/components/Example")
@@ -39,7 +39,7 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider {...{ theme }}>
-      <GlobalStyle />
+      <Global styles={globalStyles} />
       <RouterProvider {...{ router }} />
     </ThemeProvider>
   );
