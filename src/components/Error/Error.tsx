@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import { StyledWrapper, StyledTitle } from "./styled";
+import { StyledWrapper, StyledTitle } from "./emotion";
 
 const Error: React.FC = () => (
   <StyledWrapper>
