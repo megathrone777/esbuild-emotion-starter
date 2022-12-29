@@ -1,7 +1,7 @@
 import { Await, useLoaderData } from "react-router-dom";
 
 import { Error } from "~/components";
-import { TProduct } from "~/components/types";
+import { TProduct } from "~/components/App/types";
 
 const Example: React.FC = () => {
   const data = useLoaderData() as { products: TProduct[] };
