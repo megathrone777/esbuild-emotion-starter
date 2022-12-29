@@ -1,6 +1,6 @@
 import { useOutlet } from "react-router-dom";
 
-import { StyledContent } from "./styled";
+import { StyledContent } from "./emotion";
 
 const Layout: React.FC = () => {
   const outlet = useOutlet();
