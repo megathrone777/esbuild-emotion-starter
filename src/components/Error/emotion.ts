@@ -1,6 +1,6 @@
 import { styled } from "~/theme";
 
-export const StyledWrapper = styled.div(({ theme: { rem } }) => ({
+export const StyledWrapper = styled("div")(({ theme: { rem } }) => ({
   display: "flex",
   flexDirection: "column",
   height: "100%",
@@ -10,7 +10,7 @@ export const StyledWrapper = styled.div(({ theme: { rem } }) => ({
   textAlign: "center",
 }));
 
-export const StyledTitle = styled.h1(({ theme: { colors, rem } }) => ({
+export const StyledTitle = styled("h1")(({ theme: { colors, rem } }) => ({
   color: colors.orange,
   fontSize: rem(22),
   marginBottom: rem(15),
