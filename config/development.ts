@@ -11,6 +11,7 @@ const rootDir: string = cwd();
 const publicDir: string = resolve(rootDir, "public");
 const buildOptions: BuildOptions = {
   ...options,
+  metafile: true,
   outdir: `${publicDir}/js`,
   plugins: [
     ...options.plugins!,
@@ -26,10 +27,14 @@ const buildOptions: BuildOptions = {
 };
 
 (async (): Promise<void> => {
-  await createServer(buildOptions, {
+  const result = await createServer(buildOptions, {
     historyApiFallback: true,
     open: true,
     port: 1337,
     static: publicDir,
   }).start();
+
+  if (result && result.metafile) {
+    console.info("Modules count: ", Object.values(result.metafile.inputs).length);
+  }
 })();

@@ -12,7 +12,7 @@ const Example: React.FC = () => {
         <img alt="Example image." src="images/logo_img.png" />
       </div>
 
-      <p>Example component</p>
+      <p>Example componen</p>
       <p>Example component</p>
       <p>Example component</p>
     </Await>

@@ -14,7 +14,7 @@ const base: Interpolation<Theme> = ({ fonts }) => ({
   },
 
   body: {
-    WebkitFontS: "antialiased",
+    WebkitFontSmoothing: "antialiased",
     fontFamily: "JetBrainsMono",
     margin: 0,
   },
